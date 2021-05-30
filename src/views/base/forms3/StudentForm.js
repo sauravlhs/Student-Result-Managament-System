@@ -25,7 +25,7 @@ const StudentForm = () => {
           </CCardHeader>
           </CCard>
           </CCol>
-          <CCol xs="12" sm="12"></CCol>
+          <CCol xs="12" sm="12">
           <CCardBody>
           <CFormGroup row>
                   <CCol md="2">
@@ -69,7 +69,6 @@ const StudentForm = () => {
                   </CCol>
                   <CCol xs="12" md="4">
                     <CInput type="email" id="email-input" name="email-input" disabled placeholder='' autoComplete="email"/>
-
                   </CCol>
             </CFormGroup>
             <CFormGroup row>
@@ -108,7 +107,9 @@ const StudentForm = () => {
                 </CFormGroup>
 
           </CCardBody>
+          </CCol>
       </CRow>
+      <CRow>
         <CCol xs="12" lg="12">
           <CCard>
             <CCardHeader>
@@ -125,6 +126,8 @@ const StudentForm = () => {
             </CCardBody>
           </CCard>
         </CCol>
+        </CRow>
+
         </>
     )
 }

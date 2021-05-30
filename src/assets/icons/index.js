@@ -3,32 +3,6 @@ import { logo } from './logo'
 import { logoNegative } from './logo-negative'
 
 import {
-  cibSkype,
-  cibFacebook,
-  cibTwitter,
-  cibLinkedin,
-  cibFlickr,
-  cibTumblr,
-  cibXing,
-  cibGithub,
-  cibStackoverflow,
-  cibYoutube,
-  cibDribbble,
-  cibInstagram,
-  cibPinterest,
-  cibVk,
-  cibYahoo,
-  cibBehance,
-  cibReddit,
-  cibVimeo,
-  cibCcMastercard,
-  cibCcVisa,
-  cibStripe,
-  cibPaypal,
-  cibGooglePay,
-  cibCcAmex
-} from '@coreui/icons'
-import {
   cifUs,
   cifBr,
   cifIn,
@@ -233,29 +207,5 @@ export const icons = Object.assign({}, {
   cifFr,
   cifEs,
   cifPl
-}, {
-  cibSkype,
-  cibFacebook,
-  cibTwitter,
-  cibLinkedin,
-  cibFlickr,
-  cibTumblr,
-  cibXing,
-  cibGithub,
-  cibStackoverflow,
-  cibYoutube,
-  cibDribbble,
-  cibInstagram,
-  cibPinterest,
-  cibVk,
-  cibYahoo,
-  cibBehance,
-  cibReddit,
-  cibVimeo,
-  cibCcMastercard,
-  cibCcVisa,
-  cibStripe,
-  cibPaypal,
-  cibGooglePay,
-  cibCcAmex
-})
+}
+)
