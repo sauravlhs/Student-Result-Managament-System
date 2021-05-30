@@ -6,14 +6,10 @@ import {
   CCol,
   CFormGroup,
   CInput,
-  /*CInputGroup,
-  CInputGroupPrepend,
-  CInputGroupText,*/
   CLabel,
   CRow,
 
 } from '@coreui/react'
-//import CIcon from '@coreui/icons-react'
 
 const StudentForm = () => {
 
@@ -23,7 +19,7 @@ const StudentForm = () => {
       <CCol xs="12" sm="12">
           <CCard>
             <CCardHeader>
-             Jain University
+             Student Result
           </CCardHeader>
           </CCard>
           </CCol>
@@ -100,7 +96,7 @@ const StudentForm = () => {
 
                   </CCol>
             </CFormGroup>
-            
+
           </CCardBody>
       </CRow>
       </>

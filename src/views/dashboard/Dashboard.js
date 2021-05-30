@@ -1,8 +1,6 @@
-import React, { lazy } from 'react'
+import React  from 'react'
 import {
   CBadge,
-  CButton,
-  CButtonGroup,
   CCard,
   CCardBody,
   CCardFooter,
@@ -15,14 +13,10 @@ import {
 import CIcon from '@coreui/icons-react'
 
 import MainChartExample from '../charts/MainChartExample.js'
-
-const WidgetsDropdown = lazy(() => import('../widgets/WidgetsDropdown.js'))
-//const WidgetsBrand = lazy(() => import('../widgets/WidgetsBrand.js'))
-
 const Dashboard = () => {
   return (
     <>
-      <WidgetsDropdown />
+
       <CCard>
         <CCardBody>
           <CRow>
@@ -31,23 +25,8 @@ const Dashboard = () => {
               <div className="small text-muted">April 2021</div>
             </CCol>
             <CCol sm="7" className="d-none d-md-block">
-              <CButton color="primary" className="float-right">
-                <CIcon name="cil-cloud-download"/>
-              </CButton>
-              <CButtonGroup className="float-right mr-3">
-                {
-                  ['Day', 'Month', 'Year'].map(value => (
-                    <CButton
-                      color="outline-secondary"
-                      key={value}
-                      className="mx-0"
-                      active={value === 'Month'}
-                    >
-                      {value}
-                    </CButton>
-                  ))
-                }
-              </CButtonGroup>
+
+
             </CCol>
           </CRow>
           <MainChartExample style={{height: '300px', marginTop: '40px'}}/>
@@ -106,9 +85,6 @@ const Dashboard = () => {
           </CRow>
         </CCardFooter>
       </CCard>
-
-
-
       <CRow>
         <CCol>
           <CCard>
@@ -484,7 +460,7 @@ const Dashboard = () => {
                       </div>
                     </td>
                     <td className="text-center">
-                      <CIcon height={25} name="cif-pl" title="pl" id="pl" />
+                      <CIcon height={25} name="cif-in" title="in" id="in" />
                     </td>
                     <td>
                       <div className="clearfix">
