@@ -142,19 +142,8 @@ const AdminForm = () => {
 
               </CForm>
                </CCardBody>
-            <CCardFooter>
-              <CButton type="submit" size="sm" color="primary"><CIcon name="cil-scrubber" /> Assign</CButton>
-              <CButton type="reset" size="sm" color="danger"><CIcon name="cil-ban" /> Reset</CButton>
-            </CCardFooter>
-          </CCard>
-
-        </CCol>
-      </CRow>
-      <CCol xs="12" lg="12">
+               <CCol xs="12" lg="12">
           <CCard>
-            <CCardHeader>
-              Your Result
-            </CCardHeader>
             <CCardBody>
             <CDataTable
               fields={fields}
@@ -165,6 +154,15 @@ const AdminForm = () => {
             </CCardBody>
           </CCard>
         </CCol>
+            <CCardFooter>
+              <CButton type="submit" size="sm" color="primary"><CIcon name="cil-scrubber" /> Assign</CButton>
+              <CButton type="reset" size="sm" color="danger"><CIcon name="cil-ban" /> Reset</CButton>
+            </CCardFooter>
+          </CCard>
+
+        </CCol>
+      </CRow>
+
      </>
   )
 }
