@@ -8,9 +8,11 @@ import {
   CInput,
   CLabel,
   CRow,
-
+  CSelect,
+  CDataTable,
 } from '@coreui/react'
 
+const fields = ['SlNo','SUBJECTS', 'INTERNAL MARKS', 'UNIVERSITY EXAMINATION MARKS' , 'PRACTICAL MARKS','TOTAL', 'CREDITS', 'GRADE'  ]
 const StudentForm = () => {
 
     return (
@@ -89,18 +91,41 @@ const StudentForm = () => {
             </CFormGroup>
             <CFormGroup row>
                   <CCol md="2">
-                    <CLabel htmlFor="email-input">Semester</CLabel>
+                    <CLabel htmlFor="select">Semester</CLabel>
                   </CCol>
                   <CCol xs="12" md="4">
-                    <CInput type="email" id="email-input" name="email-input" disabled placeholder='6' autoComplete="email"/>
-
+                    <CSelect custom name="select" id="select">
+                    <option value="1">Sem 1</option>
+                      <option value="2">Sem 2</option>
+                      <option value="3">Sem 3</option>
+                      <option value="3">Sem 4</option>
+                      <option value="3">Sem 5</option>
+                      <option value="3">Sem 6</option>
+                      <option value="3">Sem 7</option>
+                      <option value="3">Sem 8</option>
+                    </CSelect>
                   </CCol>
-            </CFormGroup>
+                </CFormGroup>
 
           </CCardBody>
       </CRow>
-      </>
-    )
+        <CCol xs="12" lg="12">
+          <CCard>
+            <CCardHeader>
+              Your Result
+            </CCardHeader>
+            <CCardBody>
+            <CDataTable
 
+              fields={fields}
+              striped
+              itemsPerPage={10}
+              pagination
+              />
+            </CCardBody>
+          </CCard>
+        </CCol>
+        </>
+    )
 }
 export default StudentForm
